@@ -57,10 +57,10 @@ const writeFile = (file, content) => {
 
 
     // generate Terraform files
-    writeFile('../spor_api.tf', sporApiTemplate(permissions_spor_api_fylker_og_kommuner))
-    writeFile('../askeladden_api.tf', askeladdenApiTemplate(permissions_askeladden_api_fylker_og_kommuner))
-    writeFile('../roles_spor_fylker.tf', roles_spor_fylker)
-    writeFile('../roles_spor_kommuner.tf', roles_spor_kommuner)
-    writeFile('../roles_askeladden_fylker.tf', roles_askeladden_fylker)
-    writeFile('../roles_askeladden_kommuner.tf', roles_askeladden_kommuner)
+    writeFile('../spor_api-GENERATED.tf', sporApiTemplate(permissions_spor_api_fylker_og_kommuner))
+    writeFile('../askeladden_api-GENERATED.tf', askeladdenApiTemplate(permissions_askeladden_api_fylker_og_kommuner))
+    writeFile('../roles_spor_fylker-GENERATED.tf', roles_spor_fylker)
+    writeFile('../roles_spor_kommuner-GENERATED.tf', roles_spor_kommuner)
+    writeFile('../roles_askeladden_fylker-GENERATED.tf', roles_askeladden_fylker)
+    writeFile('../roles_askeladden_kommuner-GENERATED.tf', roles_askeladden_kommuner)
 })()

@@ -5,10 +5,22 @@
 
 # Procedure to configure and start the demo
 Set the following environment variables.
-```
-AUTH0_DOMAIN="<domain>"
-AUTH0_CLIENT_ID="<client-id>"
-AUTH0_CLIENT_SECRET="<client_secret>"
+```bash
+
+# bash
+export AUTH0_DOMAIN=<domain>
+export AUTH0_CLIENT_ID=<client-id>
+export AUTH0_CLIENT_SECRET=<client_secret>
+
+# Windows command prompt
+set AUTH0_DOMAIN=<domain>
+set AUTH0_CLIENT_ID=<client-id>
+set AUTH0_CLIENT_SECRET=<client_secret>
+
+#powershell
+$env:AUTH0_DOMAIN="<domain>"
+$env:AUTH0_CLIENT_ID="<client-id>"
+$env:AUTH0_CLIENT_SECRET="<client_secret>"
 ```
 
 Run the following commands
