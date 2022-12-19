@@ -3,17 +3,17 @@ resource "auth0_resource_server" "Askeladden_API" {
   identifier  = "https://askeladden.riksantikvaren.no"
 
   scopes {
-    value       = "fullt-innsyn"
+    value       = "0-fullt-innsyn"
     description = "Fullt innsyn"
   }
 
   scopes {
-    value       = "redigering"
+    value       = "0-redigering"
     description = "Redigering"
   }
 
   scopes {
-    value       = "enkelt-innsyn"
+    value       = "0-enkelt-innsyn"
     description = "Enkelt innsyn"
   }
 

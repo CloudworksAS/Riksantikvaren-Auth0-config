@@ -4,12 +4,12 @@ resource "auth0_role" "askeladden_saksbehandler" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Askeladden_API.identifier
-    name                       = "fullt-innsyn"
+    name                       = "0-fullt-innsyn"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Askeladden_API.identifier
-    name                       = "redigering"
+    name                       = "0-redigering"
   }
 }
 
@@ -19,7 +19,7 @@ resource "auth0_role" "askeladden_innsynsbruker_full" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Askeladden_API.identifier
-    name                       = "fullt-innsyn"
+    name                       = "0-fullt-innsyn"
   }
 }
 
@@ -29,6 +29,6 @@ resource "auth0_role" "askeladden_innsynsbruker_enkel" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Askeladden_API.identifier
-    name                       = "enkelt-innsyn"
+    name                       = "0-enkelt-innsyn"
   }
 }

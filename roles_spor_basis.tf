@@ -4,27 +4,27 @@ resource "auth0_role" "spor_ra" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "fire-safeguard-church"
+    name                       = "0-fire-safeguard-church"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "fire-safeguard-profane"
+    name                       = "0-fire-safeguard-profane"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "exempt-regional"
+    name                       = "0-exempt-regional"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "exempt-public"
+    name                       = "0-exempt-public"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "ske"
+    name                       = "0-ske"
   }
 }
 
@@ -34,17 +34,17 @@ resource "auth0_role" "spor_regional" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "fire-safeguard-profane"
+    name                       = "0-fire-safeguard-profane"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "exempt-public"
+    name                       = "0-exempt-public"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "ske"
+    name                       = "0-ske"
   }
 }
 
@@ -54,12 +54,12 @@ resource "auth0_role" "spor_forskning_m_erklaering" {
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "fire-safeguard-profane"
+    name                       = "0-fire-safeguard-profane"
   }
 
   permissions {
     resource_server_identifier = auth0_resource_server.Spor_API.identifier
-    name                       = "exempt-public"
+    name                       = "0-exempt-public"
   }
 }
 

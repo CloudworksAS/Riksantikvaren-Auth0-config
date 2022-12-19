@@ -4,27 +4,27 @@ module.exports = (permissions) => {
   identifier  = "https://spor.riksantikvaren.no"
 
   scopes {
-    value       = "fire-safeguard-church"
+    value       = "0-fire-safeguard-church"
     description = "Fire safeguard church"
   }
 
   scopes {
-    value       = "fire-safeguard-profane"
+    value       = "0-fire-safeguard-profane"
     description = "Fire safeguard profane"
   }
 
   scopes {
-    value       = "exempt-regional"
+    value       = "0-exempt-regional"
     description = "Exempt regional"
   }
 
   scopes {
-    value       = "exempt-public"
+    value       = "0-exempt-public"
     description = "Exempt public"
   }
 
   scopes {
-    value       = "ske"
+    value       = "0-ske"
     description = "SKE"
   }
 
