@@ -1,6 +1,8 @@
 resource "auth0_resource_server" "Askeladden_API" {
-  name        = "Askeladden API"
-  identifier  = "https://askeladden.riksantikvaren.no"
+  name              = "Askeladden API"
+  identifier        = "https://askeladden.riksantikvaren.no"
+  enforce_policies  = true
+  token_dialect     = "access_token_authz"
 
   scopes {
     value       = "0-fullt-innsyn"

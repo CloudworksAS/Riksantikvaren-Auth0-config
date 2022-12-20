@@ -1,6 +1,8 @@
 resource "auth0_resource_server" "Spor_API" {
   name        = "Spor API"
   identifier  = "https://spor.riksantikvaren.no"
+  enforce_policies  = true
+  token_dialect     = "access_token_authz"
 
   scopes {
     value       = "0-fire-safeguard-church"
