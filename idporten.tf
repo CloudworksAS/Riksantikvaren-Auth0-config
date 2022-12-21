@@ -49,3 +49,8 @@ resource "auth0_connection_client" "spor_idporten" {
   connection_id = auth0_connection.oauth2.id
   client_id     = auth0_client.Spor.id
 }
+
+resource "auth0_connection_client" "askeladden_idporten" {
+  connection_id = auth0_connection.oauth2.id
+  client_id     = auth0_client.Askeladden.id
+}
